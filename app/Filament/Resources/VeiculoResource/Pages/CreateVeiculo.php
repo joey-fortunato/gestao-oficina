@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Filament\Resources\ClienteResource\Pages;
+namespace App\Filament\Resources\VeiculoResource\Pages;
 
-use App\Filament\Resources\ClienteResource;
+use App\Filament\Resources\VeiculoResource;
 use Filament\Actions;
 use Filament\Resources\Pages\CreateRecord;
 
-class CreateCliente extends CreateRecord
+class CreateVeiculo extends CreateRecord
 {
-    protected static string $resource = ClienteResource::class;
+    protected static string $resource = VeiculoResource::class;
 
     protected function getFormActions(): array
     {
@@ -23,4 +23,5 @@ class CreateCliente extends CreateRecord
                 ->url($this->getResource()::getUrl('index')), // Redireciona para a listagem
         ];
     }
+    
 }
