@@ -1,21 +1,21 @@
 <?php
 
-namespace App\Filament\Resources\ClienteResource\Pages;
+namespace App\Filament\Resources\FornecedorResource\Pages;
 
-use App\Filament\Resources\ClienteResource;
+use App\Filament\Resources\FornecedorResource;
 use Filament\Actions;
 use Filament\Resources\Pages\CreateRecord;
 
-class CreateCliente extends CreateRecord
+class CreateFornecedor extends CreateRecord
 {
-    protected static string $resource = ClienteResource::class;
+    protected static string $resource = FornecedorResource::class;
 
     protected function getFormActions(): array
     {
         return [
             Actions\CreateAction::make()
                 ->label('Cadastrar')
-                ->submit('Cadastrar cliente'), // Botão "Criar"
+                ->submit('Cadastrar fornecedor'), // Botão "Criar"
 
             Actions\Action::make('cancel') // Botão "Cancelar"
                 ->label('Cancelar')

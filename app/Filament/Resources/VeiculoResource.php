@@ -28,6 +28,7 @@ class VeiculoResource extends Resource
     protected static ?string $model = Veiculo::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-truck';
+    protected static ?string $navigationLabel = 'Veículos';
 
     public static function form(Form $form): Form
     {
@@ -116,7 +117,7 @@ class VeiculoResource extends Resource
                         
                     Forms\Components\TextInput::make('chassi')
                         ->label('Chassi')
-                        ->placeholder('9AA.AA99A9.9A.999999')
+                        ->placeholder('9AA.AA99A9.9A.')
                         ->required()
                         ->unique(ignoreRecord: true)
                         ->maxLength(50)
